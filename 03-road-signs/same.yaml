@@ -1,14 +1,14 @@
-apiVersion: 0.1.16
+apiVersion: sameproject.ml/v1alpha1
 environments:
   default:
-    image_tag: combinatorml/jupyterlab-tensorflow-opencv:0.7
+    image_tag: combinatorml/jupyterlab-tensorflow-opencv:0.9
 metadata:
   labels: []
-  name: notebook pipeline
+  name: default_config
   version: 0.0.0
 notebook:
-  name: notebook
+  name: roadsigns
   path: roadsigns.ipynb
   requirements: requirements.txt
 run:
-  name: notebook run
+  name: default_config run
